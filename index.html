@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Photon Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="menu-icon" onclick="toggleSidebar()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
+        <div class="sidebar-content">
+            <h2>Working Principle</h2>
+            <p>
+                This clock measures time based on the speed of light and the size of the universe. 
+                Instead of using Earth's rotation, it calculates how long a single particle of light (a photon) 
+                takes to travel the average distance between two galaxies. 
+            </p>
+            <p>
+                Because our universe is constantly stretching and expanding, that distance gets longer 
+                in every new cycle—or "Epoch"—meaning the photon has farther to travel and the 
+                clock's "ticks" gradually stretch out. 
+            </p>
+            <p>
+                However, this cosmic expansion is so incredibly subtle that the clock would have to run constantly for over a million years before a human would notice even a single 1-second delay in its timing.
+            </p>
+
+            <hr class="sidebar-divider">
+
+            <h3>Definitions</h3>
+            <ul class="definitions-list">
+                <li>
+    <strong>EPOCH:</strong> 
+    A normalized factor obtained from average galactic separation and photon travel time. 
+    More info in <span style="color: #00ffcc;">"Theoretical Framework"</span>.
+                </li>
+                <li><strong>INTEGER (100.00):</strong> Counts as 1% of the Epoch.</li>
+                <li><strong>COUNTER (0.01):</strong> Counts as 1% of the Integer.</li>
+            </ul>
+
+            <div class="theory-link">
+                <a href="https://drive.google.com/file/d/1E56MDFUPG4-uxwJnveUoqZTychfadPpJ/view?usp=sharing" target="_blank">
+                    Theoretical Framework
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="clock-container">
+        <div id="epoch-label">EPOCH</div>
+        <div id="epoch-counter">000000</div>
+        <div id="main-countdown">00.00</div>
+        
+        <div class="footer-note">
+            Consistent with standard expansion models for approximately upcoming 10 Billion years
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
